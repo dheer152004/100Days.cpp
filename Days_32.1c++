@@ -1,0 +1,31 @@
+// Exception Handling
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, denum,output;
+    
+    cout<<"Enter Numerator :"<<endl;
+    cin>>num;
+    cout<<"Enter denominator :"<<endl;
+    cin>>denum;
+
+    try
+    {
+        if(denum==0)
+        {
+            throw denum;
+        }
+        else
+        {
+            output=num/denum;
+        }
+    }
+        
+        catch(int denum)
+        {
+            cout<<"You cannot 0 as denominator while division"<<endl;
+        }
+            cout<<"The output after division is :"<<output;
+    return 0;
+}

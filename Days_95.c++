@@ -10,7 +10,7 @@ class base{
 class derived:public base{
     public:
     derived(){ cout<<"Derived Class Constructor called"<<endl;}
-    v~derived(){ cout<<"Derived Class Destructor called"<<endl;}
+    ~derived(){ cout<<"Derived Class Destructor called"<<endl;}
 };
 
 int main(){
